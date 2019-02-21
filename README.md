@@ -1,5 +1,7 @@
 # vintage-vue
 
+[DEMO](http://tamtamlg.github.io/vintage-vue/)
+
 ## Project setup
 ```
 npm install
