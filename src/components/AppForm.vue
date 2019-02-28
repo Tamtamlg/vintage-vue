@@ -189,7 +189,12 @@ export default {
     width: 15px;
     height: 15px;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAAAsklEQVQoU5WRAQ0CMRAE5xWAA5AADsDB4wAJSEDCSwAFIAEJOOAlIIHMp22glNBecmnS7d7ubTvaag48uzYOI9C3kI7Axq4laesBrIGxlnTyMaAaNSQtXYGlIbyTplR+hHIDVLKnUmkFCDjxnhH3gC2WKtoTOAQwKsbld2HoF8kL5RfANqAu7R4O/Kg8CG1qcQhnWr5kL95pSeIMOMeI/ymJ98AlfGQeTEqvlLS2/MxivQBNyB4/bP4A1AAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
   }
+}
+
+.form-check-input:focus ~ label {
+  color: #fff;
 }
 
 .form__text {
