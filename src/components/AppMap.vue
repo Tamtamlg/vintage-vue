@@ -9,7 +9,6 @@
             <li class="nav-item" v-for="(item, index) in tabsData" :key="index">
               <a
                 class="nav-link"
-                id="home-tab"
                 data-toggle="tab"
                 href="javascript:void(0);"
                 role="tab"
