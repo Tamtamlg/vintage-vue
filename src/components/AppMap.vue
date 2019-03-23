@@ -324,20 +324,27 @@ export default {
     };
   },
   computed: {
-    activeMarkers () {
+    /**
+     * Определение активного маркера
+     */
+    activeMarkers() {
       return this.markers.filter(item => {
         return item.index === this.index;
-      })
+      });
     }
   },
   methods: {
+    /**
+     * Установка центра карты
+     * @param {Number} num номер активного таба
+     */
     setcenter(num) {
       const lat = this.markers[num - 1].position.lat;
       const lng = this.markers[num - 1].position.lng;
       this.$refs.mapRef.$mapPromise.then(map => {
         map.panTo({ lat: lat, lng: lng });
       });
-      this.index = num -1
+      this.index = num - 1;
     }
   },
   mounted() {

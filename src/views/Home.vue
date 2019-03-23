@@ -8,7 +8,7 @@
       </div>
     </div>
     <AppContacts/>
-    <AppMap/>
+    <!-- <AppMap/> -->
     <AppForm/>
   </main>
 </template>

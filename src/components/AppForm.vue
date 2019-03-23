@@ -100,6 +100,9 @@ export default {
     }
   },
   methods: {
+    /**
+     * Отправка формы
+     */
     onSubmit() {
       let formData = new FormData();
       formData.append("name", this.name);

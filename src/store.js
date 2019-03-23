@@ -11,9 +11,19 @@ export default new Vuex.Store({
     loading: false
   },
   mutations: {
+    /**
+     * Начало/конец запроса
+     * @param {*} state
+     * @param {*} payload
+     */
     request (state, payload) {
       state.endRequest = payload
     },
+    /**
+     * Выполнение запроса
+     * @param {*} state
+     * @param {*} payload
+     */
     setLoading (state, payload) {
       state.loading = payload
     }
@@ -25,6 +35,11 @@ export default new Vuex.Store({
       commit('setLoading', payload)
     },
 
+    /**
+     * Отправка данных формы на http://httpbin.org/post
+     * @param {*} param0
+     * @param {*} payload
+     */
     async fetchData ({
       commit,
       state
